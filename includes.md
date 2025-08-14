@@ -48,10 +48,9 @@ Define a New Class
 	Criar demo disso
 
 
-Equipe SanTada
 
-
-Extend an Existing Class
+Extend an Existing Class:
+	-------------------------------------
 	<img width="560" height="181" alt="Pasted image 20250811171541" src="https://github.com/user-attachments/assets/f4c0ed85-3b94-4de8-bb2d-c2e5115893aa" />
 	use sempre o metodo extendsObject()
 	estende uma classe para adicionar novas funcionalidades.
@@ -61,6 +60,7 @@ Extend an Existing Class
 	No Client Callable usamos o GlideAjax para o front.
 	----------------
 	O GlideAjax permite o Client Script e as UI Policies chamarem o server-side via Script include.
+ 	-------------------------------------
 	<img width="652" height="321" alt="Pasted image 20250811173645" src="https://github.com/user-attachments/assets/62cdc8ca-2e7f-4d5c-bbed-f83433c97b2f" />
 	<img width="610" height="386" alt="Pasted image 20250811175504" src="https://github.com/user-attachments/assets/fe940a57-a2d9-4c8d-8cd5-231b92499317" />
 
@@ -73,21 +73,23 @@ Uma boa prática é minimizar as consultar ao servidor (server lookups).
 escopo de aplicação
 	pode ser pública ou privada
 	explicar o que é rapidamente
-	há a protection policy
+	há a protection policy:
 		esse assegura que a propriedade é apenas leitura (não pode modificar) ou protegido, ou seja, no protegido sua lógica não é visualizável. O padrão (out of box) é o none.
 		só funciona se o script include ou a aplicação que o contém esttá sendo instalado pelo SN application store ou pelo app repository.
 	A sintaxe para chamar um Script Include depende do escopo.
+	-------------------------------------
 	<img width="618" height="233" alt="Pasted image 20250812140136" src="https://github.com/user-attachments/assets/9d692c19-e681-4390-aef4-e5f9478a0ac5" />
 	<img width="645" height="323" alt="Pasted image 20250812140248" src="https://github.com/user-attachments/assets/2ec61db1-0be1-4e26-bec6-ec47eef0bd2a" />
 	<img width="614" height="383" alt="Pasted image 20250812143845" src="https://github.com/user-attachments/assets/184d5a34-dae5-4cd4-8b9b-816209199315" />
 	<img width="631" height="378" alt="Pasted image 20250812143941" src="https://github.com/user-attachments/assets/9db52192-dc3c-471d-a9f6-b01340cb8305" />
-	<img width="1275" height="337" alt="Pasted image 20250813200034" src="https://github.com/user-attachments/assets/38ffc736-2245-475f-b172-66a6afdf3550" />
 
 
 Por que usar?
 	reusabilidade através da plataforma
 	mantenabilidade
+ 
 Quando usar?
 	Sempre que tiver um pedaço de código que está sendo utilizado em dois lugares diferentes da SN. Se estou usando duas BRs que possuem o mesmo código, então eles basicamente fazem a mesma coisa, apenas com objetos diferentes, nisso se usa o script include
+ 
 Como?
 	É usada em quase toda aplicação, definir a função uma vez e depois chama-la.
